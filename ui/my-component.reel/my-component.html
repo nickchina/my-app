@@ -9,12 +9,19 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "condition": {
+            "prototype": "montage/ui/condition.reel",
+            "properties": {
+                "removalStrategy": "hide"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="MyComponent">
+        <div data-montage-id="condition"></div>
     </div>
 </body>
 </html>
