@@ -10,10 +10,12 @@
                 "element": {"#": "owner"}
             }
         },
-        "condition": {
-            "prototype": "montage/ui/condition.reel",
+        "button": {
+            "prototype": "digit/ui/button.reel",
             "properties": {
-                "removalStrategy": "hide"
+                "element": {"#": "button"},
+                "enabled": true,
+                "label": "Button"
             }
         }
     }
@@ -22,6 +24,7 @@
 <body>
     <div data-montage-id="owner" class="MyComponent">
         <div data-montage-id="condition"></div>
+        <button data-montage-id="button"></button>
     </div>
 </body>
 </html>
